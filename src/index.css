@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   /* line-height: 1.5;
   font-weight: 400;
 
@@ -20,6 +20,75 @@
 }
 .btn {
   text-transform: capitalize;
+}
+.HEADER_ANIMATION {
+  animation-name: HEADER-ANIMATION;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.HEADER_ANIMATION_FLY_GUY {
+  animation-name: HEADER-ANIMATION-FLY-GUY;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.HEADER_ANIMATION_FLY_GUY_1 {
+  animation-name: HEADER-ANIMATION-FLY-GUY_1;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes HEADER-ANIMATION-FLY-GUY_1 {
+  0% {
+    transform: translate(-15%, 13%);
+  }
+  25% {
+    transform: translate(16%, 15%);
+  }
+  50% {
+    transform: translate(8%, -17%);
+  }
+  75% {
+    transform: translate(-6%, 5%);
+  }
+  100% {
+    transform: translate(-15%, 13%);
+  }
+}
+@keyframes HEADER-ANIMATION-FLY-GUY {
+  0% {
+    transform: translate(-15%, 23%);
+  }
+  25% {
+    transform: translate(71%, 35%);
+  }
+  50% {
+    transform: translate(88%, -47%);
+  }
+  75% {
+    transform: translate(-46%, 35%);
+  }
+  100% {
+    transform: translate(-15%, 23%);
+  }
+}
+@keyframes HEADER-ANIMATION {
+  0% {
+    transform: translate(-5%, 3%);
+  }
+  25% {
+    transform: translate(3%, 6%);
+  }
+  50% {
+    transform: translate(9%, -3%);
+  }
+  75% {
+    transform: translate(-4%, 8%);
+  }
+  100% {
+    transform: translate(-5%, 3%);
+  }
 }
 /* a {
   font-weight: 500;
