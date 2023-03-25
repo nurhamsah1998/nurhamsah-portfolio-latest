@@ -29,16 +29,46 @@
 }
 .HEADER_ANIMATION_FLY_GUY {
   animation-name: HEADER-ANIMATION-FLY-GUY;
-  animation-duration: 9s;
+  animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 .HEADER_ANIMATION_FLY_GUY_1 {
   animation-name: HEADER-ANIMATION-FLY-GUY_1;
-  animation-duration: 9s;
+  animation-duration: 19s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+.CIRCLE_ANIMATION {
+  animation-name: CIRCLE_ANIMATION;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.CIRCLE_ANIMATION_1 {
+  animation-name: CIRCLE_ANIMATION_1;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes CIRCLE_ANIMATION {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes CIRCLE_ANIMATION_1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes HEADER-ANIMATION-FLY-GUY_1 {
   0% {
     transform: translate(-15%, 13%);
