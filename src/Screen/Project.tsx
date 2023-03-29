@@ -50,7 +50,7 @@ function Project() {
     },
   ];
   return (
-    <div className="h-[100vh]">
+    <div>
       <div className="flex gap-5 flex-wrap justify-center">
         {personalProject.map(
           (

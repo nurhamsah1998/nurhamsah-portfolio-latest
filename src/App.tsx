@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "Screen/Footer";
 import Project from "Screen/Project";
 import AboutMe from "./Screen/AboutMe";
 import Header from "./Screen/Header";
