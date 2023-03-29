@@ -1,4 +1,5 @@
 import React from "react";
+import Project from "Screen/Project";
 import AboutMe from "./Screen/AboutMe";
 import Header from "./Screen/Header";
 import Navbar from "./Screen/Navbar";
@@ -10,7 +11,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
-      <Skill />
+      <Project />
     </div>
   );
 }

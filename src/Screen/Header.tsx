@@ -21,7 +21,7 @@ function Header() {
           "
             >
               <div
-                className="h-5 w-5 bg-slate-700 rounded-full absolute
+                className="h-5 w-5 bg-green-500 rounded-full absolute
           "
               ></div>
             </div>
@@ -30,19 +30,19 @@ function Header() {
           "
             >
               <div
-                className="h-10 w-10 bg-slate-500  rounded-full absolute
+                className="h-10 w-10 bg-orange-400  rounded-full absolute
           "
               ></div>
             </div>
           </div>
           <div className="HEADER_ANIMATION_FLY_GUY absolute opacity-[0.3]  -top-10 -left-10">
-            <div className="w-20 h-20 bg-slate-300 rounded-full"></div>
+            <div className="w-20 h-20 bg-purple-500 rounded-full"></div>
           </div>
           <div className="HEADER_ANIMATION_FLY_GUY absolute opacity-[0.3]  -top-5 right-5">
-            <div className="w-5 h-5 bg-slate-600 rounded-full"></div>
+            <div className="w-5 h-5 bg-pink-500 rounded-full"></div>
           </div>
           <div className="HEADER_ANIMATION_FLY_GUY_1 absolute opacity-[0.3]  -bottom-10 -left-10">
-            <div className="w-20 h-20 bg-slate-400 rounded-full"></div>
+            <div className="w-20 h-20 bg-cyan-500 rounded-full"></div>
           </div>
         </div>
       </div>
