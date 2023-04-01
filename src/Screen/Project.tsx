@@ -7,15 +7,7 @@ import GOV from "assets/ProjectIMG/gov_management.png";
 import StudentPaymentApp from "assets/ProjectIMG/student_payment_app.png";
 
 function Project() {
-  const personalProject = [
-    {
-      name: "Restaurant App",
-      tech: "React Native | React Native Paper",
-      tag: "React Native",
-      color: "bg-teal-500",
-      img: RestaurantApp,
-      desc: "Restaurant app with easy checkout flow",
-    },
+  const webApplication = [
     {
       name: "Bertanya",
       tech: "Next Js | Tailwind CSS | React Query | Supabase",
@@ -48,11 +40,20 @@ function Project() {
       img: MoneyApp,
       desc: "My latest project is in development stage. financial management application",
     },
+    {
+      name: "Restaurant App",
+      tech: "React Native | React Native Paper",
+      tag: "React Native",
+      color: "bg-teal-500",
+      img: RestaurantApp,
+      desc: "Restaurant app with easy checkout flow",
+    },
   ];
   return (
     <div>
+      <p className=" text-xl text-center font-bold mb-5">My Personal Project</p>
       <div className="flex gap-5 flex-wrap justify-center">
-        {personalProject.map(
+        {webApplication.map(
           (
             item: {
               name?: string;

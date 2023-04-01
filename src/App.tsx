@@ -1,5 +1,7 @@
 import React from "react";
+import ContactMe from "Screen/ContactMe";
 import Footer from "Screen/Footer";
+import LogoProject from "Screen/LogoProject";
 import Project from "Screen/Project";
 import AboutMe from "./Screen/AboutMe";
 import Header from "./Screen/Header";
@@ -11,8 +13,12 @@ function App() {
     <div>
       <Navbar />
       <Header />
-      <AboutMe />
-      <Project />
+      <div className="grid gap-24">
+        <AboutMe />
+        <Project />
+        <LogoProject />
+        <ContactMe />
+      </div>
     </div>
   );
 }

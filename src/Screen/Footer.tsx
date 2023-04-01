@@ -36,15 +36,13 @@ function Footer() {
           regret "
         </p>
       </div>
-      <div className="absolute text-white bottom-5 text-center w-full">
+      <div className="absolute text-white bottom-5 left-5 text-center right-5 justify-between flex items-center">
+        <p>Copyright Nurhamsah 2023</p>
         <div className="flex items-center justify-center gap-4">
           {ContactMe.map((x: any, y: number) => (
-            <button key={y} className="btn">
-              {x.icon}
-            </button>
+            <button key={y}>{x.icon}</button>
           ))}
         </div>
-        <p className="mt-10">Copyright Nurhamsah 2023</p>
       </div>
     </div>
   );
