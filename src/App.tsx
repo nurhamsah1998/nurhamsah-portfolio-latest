@@ -10,16 +10,26 @@ import Skill from "./Screen/Skill";
 
 function App() {
   return (
-    <div>
+    <>
       <Navbar />
-      <Header />
-      <div className="grid gap-24">
-        <AboutMe />
-        <Project />
-        <LogoProject />
-        <ContactMe />
+      <div className="">
+        <Header />
+        <div className="grid gap-24">
+          <div className="p-20">
+            <AboutMe />
+          </div>
+          <div className="p-20 bg-slate-300">
+            <Project />
+          </div>
+          <div className="p-20">
+            <LogoProject />
+          </div>
+          <div className="p-20">
+            <ContactMe />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -2,25 +2,12 @@ import React from "react";
 
 function ContactMe() {
   return (
-    <div className="p-5">
-      <p className="">Dont Be Shy</p>
-      <div className="mt-3 grid gap-5">
-        <input
-          type="text"
-          placeholder="Name"
-          className="input input-bordered input-primary w-full max-w-xs"
-        />
-        <input
-          type="text"
-          placeholder="Email Address"
-          className="input input-bordered input-primary w-full max-w-xs"
-        />
-        <input
-          type="text"
-          placeholder="Message"
-          className="input input-bordered input-primary w-full max-w-xs"
-        />
-      </div>
+    <div className=" text-center">
+      <p className="text-xl font-bold">
+        Feel free to contact me. there are many creative ideas that we can make
+        happen so what are you waiting for, let's discuss it
+      </p>
+      <button className="btn-primary btn mt-5">Get in Touchs</button>
     </div>
   );
 }

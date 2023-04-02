@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 :root {
+  overflow-x: hidden;
   font-family: "Comfortaa", cursive;
   /* line-height: 1.5;
   font-weight: 400;
@@ -35,6 +36,12 @@
 }
 .HEADER_ANIMATION_FLY_GUY_1 {
   animation-name: HEADER-ANIMATION-FLY-GUY_1;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.HEADER_ANIMATION_FLY_GUY_2 {
+  animation-name: HEADER-ANIMATION-FLY-GUY_2;
   animation-duration: 19s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -71,19 +78,36 @@
 
 @keyframes HEADER-ANIMATION-FLY-GUY_1 {
   0% {
-    transform: translate(-15%, 13%);
+    transform: translate(-21%, 11%);
   }
   25% {
-    transform: translate(16%, 15%);
+    transform: translate(23%, 22%);
   }
   50% {
-    transform: translate(8%, -17%);
+    transform: translate(18%, -7%);
   }
   75% {
-    transform: translate(-6%, 5%);
+    transform: translate(-16%, 25%);
   }
   100% {
-    transform: translate(-15%, 13%);
+    transform: translate(-21%, 11%);
+  }
+}
+@keyframes HEADER-ANIMATION-FLY-GUY_2 {
+  0% {
+    transform: translate(-5%, 21%);
+  }
+  25% {
+    transform: translate(13%, 9%);
+  }
+  50% {
+    transform: translate(21%, -12%);
+  }
+  75% {
+    transform: translate(-16%, 25%);
+  }
+  100% {
+    transform: translate(-5%, 21%);
   }
 }
 @keyframes HEADER-ANIMATION-FLY-GUY {

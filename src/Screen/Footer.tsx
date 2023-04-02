@@ -10,22 +10,28 @@ import {
 function Footer() {
   const ContactMe = [
     {
-      icon: <IoMail size={30} />,
+      icon: <IoMail size={20} />,
+      url: "mailto:nur.hamsah.cash@gmail.com",
     },
     {
-      icon: <IoLogoWhatsapp size={30} />,
+      icon: <IoLogoWhatsapp size={20} />,
+      url: "https://wa.me/081213221343",
     },
     {
-      icon: <IoLogoGithub size={30} />,
+      icon: <IoLogoGithub size={20} />,
+      url: "https://github.com/nurhamsah1998",
     },
     {
-      icon: <IoLogoLinkedin size={30} />,
+      icon: <IoLogoLinkedin size={20} />,
+      url: "https://www.linkedin.com/in/nur-hamsah-kd1998",
     },
     {
-      icon: <IoLogoFacebook size={30} />,
+      icon: <IoLogoFacebook size={20} />,
+      url: "https://web.facebook.com/nur.hamsah.948",
     },
     {
-      icon: <IoLogoInstagram size={30} />,
+      icon: <IoLogoInstagram size={20} />,
+      url: "https://www.instagram.com/nurhamsah_1998/",
     },
   ];
   return (
@@ -40,7 +46,14 @@ function Footer() {
         <p>Copyright Nurhamsah 2023</p>
         <div className="flex items-center justify-center gap-4">
           {ContactMe.map((x: any, y: number) => (
-            <button key={y}>{x.icon}</button>
+            <button
+              onClick={() => {
+                window.location.href = x.url;
+              }}
+              key={y}
+            >
+              {x.icon}
+            </button>
           ))}
         </div>
       </div>

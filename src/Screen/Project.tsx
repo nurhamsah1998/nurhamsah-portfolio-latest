@@ -51,7 +51,7 @@ function Project() {
   ];
   return (
     <div>
-      <p className=" text-xl text-center font-bold mb-5">My Personal Project</p>
+      <p className=" text-3xl text-center font-bold mb-20">My Work</p>
       <div className="flex gap-5 flex-wrap justify-center">
         {webApplication.map(
           (
