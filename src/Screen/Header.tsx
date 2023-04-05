@@ -3,14 +3,26 @@ import HeaderIcon from "assets/SVG/HeaderIcon";
 
 function Header() {
   return (
-    <div className=" h-[100vh] w-full grid items-center">
+    <div className=" h-[100vh] w-full grid items-center md:px-0 px-3">
       <div className="flex justify-evenly items-center">
         <div>
+          <p className="  font-bold">Hello my name is,</p>
           <p className=" text-3xl font-bold">Nurhamsah</p>
           <p className=" text-xl">I'am Software Engineer and Designer</p>
-          <p className=" text-xl">
+          {/* <p className=" text-xl">
             ReactJS | NextJS | ReactNative | NodeJS | Figma
-          </p>
+          </p> */}
+          {/* Made by
+@kennyotsu */}
+          <div className="loaders">
+            <div className="words">
+              <span className="word text-3xl"></span>
+              <span className="word text-3xl">React JS</span>
+              <span className="word text-3xl">Next JS</span>
+              <span className="word text-3xl">React Native</span>
+              <span className="word text-3xl">Figma</span>
+            </div>
+          </div>
           <div className="mt-5 gap-5 flex">
             <button
               className="btn"
@@ -30,7 +42,7 @@ function Header() {
             </button>
           </div>
         </div>
-        <div className="relative ">
+        <div className="relative hidden md:block">
           <div className="HEADER_ANIMATION relative z-10 flex justify-center items-center ">
             <HeaderIcon size={400} />
             {/* <div
@@ -53,13 +65,13 @@ function Header() {
             </div> */}
           </div>
           <div className="HEADER_ANIMATION_FLY_GUY absolute  -top-10 -left-10">
-            <div className=" w-48 h-48 bg-purple-300 rounded-full"></div>
+            <div className=" w-48 h-48 bg-slate-300 rounded-full"></div>
           </div>
           <div className="HEADER_ANIMATION_FLY_GUY_2 absolute  -top-5 right-5">
-            <div className=" w-32 h-32 bg-pink-300 rounded-full"></div>
+            <div className=" w-32 h-32 bg-slate-400 rounded-full"></div>
           </div>
           <div className="HEADER_ANIMATION_FLY_GUY_1 absolute  -bottom-10 -left-10">
-            <div className="w-20 h-20 bg-indigo-300 rounded-full"></div>
+            <div className="w-20 h-20 bg-slate-200 rounded-full"></div>
           </div>
         </div>
       </div>
