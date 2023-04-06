@@ -20,7 +20,7 @@ function Header() {
               <span className="word text-3xl">React JS</span>
               <span className="word text-3xl">Next JS</span>
               <span className="word text-3xl">React Native</span>
-              <span className="word text-3xl">Figma</span>
+              <span className="word text-3xl">Designer</span>
             </div>
           </div>
           <div className="mt-5 gap-5 flex">
@@ -33,7 +33,7 @@ function Header() {
               Get in Touch
             </button>
             <button
-              className="btn btn-accent"
+              className="btn btn-outline"
               onClick={() => {
                 window.location.href = "/File/Nurhamsah _Resume.pdf";
               }}

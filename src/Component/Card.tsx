@@ -22,14 +22,16 @@ function Card({
   name?: string;
 }) {
   return (
-    <div className="  flex justify-between">
-      <div className={`w-1/2 order-${order ? "0" : "2"}`}>
+    <div className=" flex justify-between">
+      <div className={`w-1/2 ${order ? "order-2" : "order-1"}`}>
         <p className=" text-3xl font-bold">{name}</p>
         <p className="mt-2 text-xl ">{tag}</p>
+        <button className="btn mt-5">Learn More</button>
       </div>
       <div
-        className="max-w-[420px] shadow-lg h-full md:h-80 relative rounded-2xl overflow-hidden
-"
+        className={`max-w-[420px] shadow-lg h-full md:h-80 relative rounded-2xl overflow-hidden ${
+          !order ? "order-2" : "order-1"
+        }`}
       >
         <div
           className={`absolute w-full  scale-[3] hover:scale-[1] top-0 duration-200 opacity-0 hover:opacity-100 h-full ${bgcolorHover} text-white justify-center items-center flex`}

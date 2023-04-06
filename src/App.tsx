@@ -6,7 +6,8 @@ import Project from "Screen/Project";
 import AboutMe from "./Screen/AboutMe";
 import Header from "./Screen/Header";
 import Navbar from "./Screen/Navbar";
-import Skill from "./Screen/Skill";
+import Skill from "./Screen/Services";
+import Services from "./Screen/Services";
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
       <div className="">
         <Header />
         <div className="grid gap-24">
-          {/* <div className="px-3 md:p-20">
-            <AboutMe />
-          </div> */}
-          <div className="px-3 md:p-20 bg-slate-300">
+          <div className="px-3 md:p-20 ">
+            <Services />
+          </div>
+          <div className="px-3 md:p-20 ">
             <Project />
           </div>
           <div className="px-3 md:p-20">
