@@ -7,17 +7,17 @@ function Services() {
   const servicesOffer = [
     {
       name: "Web Application",
-      desc: "",
+      desc: "Create web apps with easy-to-use UX UI or customize as you like.",
       icon: <WebApplication size={220} />,
     },
     {
       name: "Mobile Application",
-      desc: "",
+      desc: "Create android smartphone and tablet applications with various features.",
       icon: <MobileApplication size={220} />,
     },
     {
       name: "Logo Maker",
-      desc: "",
+      desc: "Branding your product by creating the best and most meaningful logo here",
       icon: <Designer size={220} />,
     },
   ];
@@ -32,11 +32,7 @@ function Services() {
           <div key={index} className="">
             <div className="flex justify-center">{item.icon}</div>
             <p className="text-center mt-5 text-2xl">{item.name}</p>
-            <p className="text-center">
-              asdkj ajksdakjdbsajd sjadkjksafbasnod jasljkdb asjkpaisfbspaj
-              fjjbsdfjnsdfjjb as df asdjkfhsdakjfkjsd kjdfn kjasdfnsd fjksdkfj
-              bs adf
-            </p>
+            <p className="text-center">{item.desc}</p>
           </div>
         ))}
       </div>
