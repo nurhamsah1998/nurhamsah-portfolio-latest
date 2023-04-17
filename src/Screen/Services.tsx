@@ -27,12 +27,12 @@ function Services() {
         {" "}
         My Services
       </p>
-      <div className="flex justify-between items-center gap-20">
+      <div className="grid md:flex justify-between items-center gap-20">
         {servicesOffer.map((item: any, index: any) => (
           <div key={index} className="">
             <div className="flex justify-center">{item.icon}</div>
             <p className="text-center mt-5 text-2xl">{item.name}</p>
-            <p className="text-center">{item.desc}</p>
+            <p className="text-center text-sm mt-5">{item.desc}</p>
           </div>
         ))}
       </div>

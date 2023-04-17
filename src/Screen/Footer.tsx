@@ -37,14 +37,13 @@ function Footer() {
   return (
     <div className="h-[400px] bg-slate-700 relative mt-10">
       <div className=" justify-center items-center flex h-full">
-        <p className="text-white text-3xl font-bold italic">
+        <p className="text-white font-bold italic text-center">
           " It's better to be tormented by discipline than to be tormented by
           regret "
         </p>
       </div>
-      <div className="absolute text-white bottom-5 left-5 text-center right-5 justify-between flex items-center">
-        <p>Copyright Nurhamsah 2023</p>
-        <div className="flex items-center justify-center gap-4">
+      <div className="absolute text-white bottom-5 left-5 text-center right-5 justify-center md:justify-between grid md:flex items-center">
+        <div className="flex items-center justify-center gap-4 mb-5 md:mb-0">
           {ContactMe.map((x: any, y: number) => (
             <button
               onClick={() => {
@@ -56,6 +55,7 @@ function Footer() {
             </button>
           ))}
         </div>
+        <p className="text-xs">Copyright Nurhamsah 2023</p>
       </div>
     </div>
   );
