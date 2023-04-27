@@ -8,14 +8,29 @@ function LogoProject() {
       <p className=" text-3xl font-bold text-center md:mb-20 mb-10">
         My Logo Design
       </p>
-      <div>
-        <Marquee className="bg-red-800">
+      <div className="hidden md:block">
+        <Marquee>
           {LOGOPROJECT.map((x: any, y: any) => (
-            <div className="bg-green-400">
-              <img key={y} className="w-[230px]" src={x} />
+            <div className="">
+              <img
+                key={y}
+                className="w-[230px] p-5 grayscale hover:grayscale-0"
+                src={x}
+              />
             </div>
           ))}
         </Marquee>
+      </div>
+      <div className="flex flex-wrap gap-5 md:hidden justify-around items-center">
+        {LOGOPROJECT.map((x: any, y: any) => (
+          <div className="">
+            <img
+              key={y}
+              className="w-[130px]  grayscale hover:grayscale-0"
+              src={x}
+            />
+          </div>
+        ))}
       </div>
       <div className="flex flex-wrap gap-5 md:gap-20 justify-center items-center"></div>
     </div>
