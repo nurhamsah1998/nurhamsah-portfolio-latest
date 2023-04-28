@@ -8,7 +8,7 @@ function LogoProject() {
       <p className=" text-3xl font-bold text-center md:mb-20 mb-10">
         My Logo Design
       </p>
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         <Marquee>
           {LOGOPROJECT.map((x: any, y: any) => (
             <div className="">
@@ -21,7 +21,7 @@ function LogoProject() {
           ))}
         </Marquee>
       </div>
-      <div className="flex flex-wrap gap-5 md:hidden justify-around items-center">
+      <div className="flex flex-wrap gap-5 xl:hidden justify-around items-center">
         {LOGOPROJECT.map((x: any, y: any) => (
           <div className="">
             <img

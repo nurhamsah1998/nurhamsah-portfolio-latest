@@ -52,7 +52,7 @@ function Project() {
   return (
     <div className="md:my-0  my-5">
       <p className=" text-3xl text-center font-bold md:mb-20 mb-10 ">My Work</p>
-      <div className="grid gap-10 md:gap-20">
+      <div className="grid gap-10 md:gap-20 justify-center">
         {webApplication.map(
           (
             item: {

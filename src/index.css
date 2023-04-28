@@ -58,6 +58,10 @@
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+#services {
+  height: 600px;
+  background-color: pink;
+}
 
 @keyframes CIRCLE_ANIMATION {
   from {

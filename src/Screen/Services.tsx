@@ -22,17 +22,17 @@ function Services() {
     },
   ];
   return (
-    <div className="p-3">
+    <div className="p-3 w-full ">
       <p className="text-3xl text-center font-semibold md:mb-20 mb-10 ">
         {" "}
         My Services
       </p>
-      <div className="grid md:flex justify-between items-center gap-20">
+      <div className="flex flex-wrap items-center justify-center ">
         {servicesOffer.map((item: any, index: any) => (
           <div key={index} className="">
             <div className="flex justify-center">{item.icon}</div>
             <p className="text-center mt-5 text-2xl">{item.name}</p>
-            <p className="text-center text-sm mt-5">{item.desc}</p>
+            <p className="text-center text-sm mt-5 max-w-md">{item.desc}</p>
           </div>
         ))}
       </div>

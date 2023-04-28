@@ -16,7 +16,7 @@ function App() {
       <div className="">
         <Header />
         <div className="grid gap-24">
-          <div className="px-3 md:p-20 ">
+          <div id="#services" className="px-3 main md:p-20 ">
             <Services />
           </div>
           <div className="px-3 md:p-20 ">
