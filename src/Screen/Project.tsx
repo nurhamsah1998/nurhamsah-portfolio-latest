@@ -21,8 +21,8 @@ function Project() {
       tech: "React Js (Minimal UI) | Material UI | React Query | Express | Node Js | Sequalize | mySQL",
       color: "bg-cyan-500",
       img: StudentPaymentApp,
-      tag: "This application is an application for schools where its use is to record a list of student bills and students can see the number of bills lacking or a list of bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
-      desc: "Application for schools where its use is to record a list of student bills and students can see the number of bills lacking or a list of bills",
+      tag: "Application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
+      desc: "Application for schools where its use is to record a list of student bills",
     },
     {
       name: "Gov Management App",

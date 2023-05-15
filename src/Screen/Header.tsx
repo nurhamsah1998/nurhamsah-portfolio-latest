@@ -1,4 +1,4 @@
-import React from "react";
+import { ContactMe } from "./Footer";
 import HeaderIcon from "assets/SVG/HeaderIcon";
 
 function Header() {
@@ -40,6 +40,18 @@ function Header() {
             >
               Resume
             </button>
+          </div>
+          <div className="flex mt-5 gap-4 mb-5 md:mb-0">
+            {ContactMe.map((x: any, y: number) => (
+              <button
+                onClick={() => {
+                  window.location.href = x.url;
+                }}
+                key={y}
+              >
+                {x.icon}
+              </button>
+            ))}
           </div>
         </div>
         <div className="relative hidden md:block">
