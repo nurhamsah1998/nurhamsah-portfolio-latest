@@ -35,7 +35,7 @@ function Header() {
             <button
               className="btn btn-outline"
               onClick={() => {
-                window.location.href = "File/Nurhamsah _Resume.pdf";
+                window.location.href = "file/nurhamsah_resume.pdf";
               }}
             >
               Resume

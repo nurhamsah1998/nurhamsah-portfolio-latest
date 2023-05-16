@@ -12,7 +12,7 @@ import Services from "./Screen/Services";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="">
         <Header />
         <div className="grid gap-24">

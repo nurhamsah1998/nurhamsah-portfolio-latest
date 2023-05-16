@@ -3,13 +3,14 @@ import { LOGOPROJECT } from "Var/logo";
 import Marquee from "react-fast-marquee";
 
 function LogoProject() {
+  const widthContainer = window.innerWidth || 300;
   return (
-    <div className="realtive overflow-hidden">
+    <div className="p-0">
       <p className=" text-3xl font-bold text-center md:mb-20 mb-10">
         My Logo Design
       </p>
-      <div className="hidden xl:block">
-        <Marquee>
+      {/* <div className={`hidden xl:block w-1/3`}>
+        <Marquee className={`bg-red-500 `}>
           {LOGOPROJECT.map((x: any, y: any) => (
             <div className="">
               <img
@@ -20,8 +21,8 @@ function LogoProject() {
             </div>
           ))}
         </Marquee>
-      </div>
-      <div className="flex flex-wrap gap-5 xl:hidden justify-around items-center">
+      </div> */}
+      <div className="flex flex-wrap gap-5 justify-center items-center">
         {LOGOPROJECT.map((x: any, y: any) => (
           <div className="">
             <img
