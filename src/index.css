@@ -3,9 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* https://stackoverflow.com/a/59253905/18038473 */
+  scroll-margin-top: 100px;
+}
 :root {
   overflow-x: hidden;
   font-family: "Comfortaa", cursive;
+
   /* line-height: 1.5;
   font-weight: 400;
 

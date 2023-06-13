@@ -24,7 +24,7 @@ function LogoProject() {
       </div> */}
       <div className="flex flex-wrap gap-5 justify-center items-center">
         {LOGOPROJECT.map((x: any, y: any) => (
-          <div className="">
+          <div key={y} className="">
             <img
               key={y}
               className="w-[130px]  grayscale hover:grayscale-0"

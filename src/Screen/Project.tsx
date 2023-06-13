@@ -6,7 +6,11 @@ import RestaurantApp from "assets/ProjectIMG/restaurant.png";
 import GOV from "assets/ProjectIMG/gov_management.png";
 import StudentPaymentApp from "assets/ProjectIMG/student_payment_app.png";
 
-function Project() {
+function Project({
+  projectRef,
+}: {
+  projectRef?: React.LegacyRef<HTMLDivElement> | undefined;
+}) {
   const webApplication = [
     {
       name: "Bertanya",
@@ -50,8 +54,10 @@ function Project() {
     },
   ];
   return (
-    <div className="md:my-0  my-5">
-      <p className=" text-3xl text-center font-bold md:mb-20 mb-10 ">My Work</p>
+    <div ref={projectRef} className="md:my-0  my-5">
+      <p className=" text-3xl text-center font-bold md:mb-20 mb-10 ">
+        My Personal Project App
+      </p>
       <div className="grid gap-10 md:gap-20 justify-center">
         {webApplication.map(
           (

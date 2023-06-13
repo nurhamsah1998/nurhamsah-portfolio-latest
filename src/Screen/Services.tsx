@@ -3,7 +3,7 @@ import Designer from "assets/SVG/Designer";
 import MobileApplication from "assets/SVG/MobileApplication";
 import WebApplication from "assets/SVG/WebApplication";
 
-function Services() {
+function Services({ serviceRef }: { serviceRef?: any }) {
   const servicesOffer = [
     {
       name: "Web Application",
@@ -22,9 +22,8 @@ function Services() {
     },
   ];
   return (
-    <div className="p-3 w-full ">
+    <div ref={serviceRef} className="p-3 w-full ">
       <p className="text-3xl text-center font-semibold md:mb-20 mb-10 ">
-        {" "}
         My Services
       </p>
       <div className="flex flex-wrap items-center justify-center ">

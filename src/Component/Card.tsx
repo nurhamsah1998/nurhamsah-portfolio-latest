@@ -47,7 +47,7 @@ function Card({
             <div className="mt-2 font-bold">
               <p className=" text-md">{tech}</p>
             </div>
-            <button className="btn mt-3">{btnHover}</button>
+            <button className="btn visible md:hidden mt-3">{btnHover}</button>
           </div>
         </div>
         <div
