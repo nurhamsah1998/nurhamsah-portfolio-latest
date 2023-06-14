@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate, NavigateFunction } from "react-router-dom";
 
 function Card({
   hoverText,
@@ -10,6 +11,7 @@ function Card({
   tag,
   name,
   order,
+  link,
 }: {
   order?: boolean;
   hoverText?: string;
@@ -20,7 +22,9 @@ function Card({
   bgcolorHover?: string;
   bgcolorCover?: string;
   name?: string;
+  link?: string | any;
 }) {
+  const navigation: NavigateFunction = useNavigate();
   return (
     <div className=" grid md:flex justify-between">
       <div
@@ -47,7 +51,13 @@ function Card({
             <div className="mt-2 font-bold">
               <p className=" text-md">{tech}</p>
             </div>
-            <button className="btn visible md:hidden mt-3">{btnHover}</button>
+            <button
+              disabled={!Boolean(link)}
+              onClick={() => (window.location.href = link)}
+              className="btn visible md:hidden mt-3"
+            >
+              {btnHover}
+            </button>
           </div>
         </div>
         <div

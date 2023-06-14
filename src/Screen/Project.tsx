@@ -18,6 +18,7 @@ function Project({
       tag: "The project I made with next js and tailwind css. starting from UI/UX design and the logo is the result of my creativity.This app uses pure Tailwind CSS, Next JS and Supabase. Application with the use of Question & Answer. so the user can ask questions and provide answers, and in this application the user can get several badges as a reward for what he has achieved. This application has an update. let's check now!",
       color: "bg-pink-500",
       img: BertanyaApp,
+      link: "https://bertanya.vercel.app/",
       desc: "Questions and answers project with user features can earn badges",
     },
     {
@@ -25,6 +26,7 @@ function Project({
       tech: "React Js (Minimal UI) | Material UI | React Query | Express | Node Js | Sequalize | mySQL",
       color: "bg-cyan-500",
       img: StudentPaymentApp,
+      link: "https://www.youtube.com/watch?v=qnpGTjnhDUc",
       tag: "Application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
       desc: "Application for schools where its use is to record a list of student bills",
     },
@@ -33,6 +35,7 @@ function Project({
       tech: "React JS | Material UI | React Query | Supabase",
       tag: "I and my friend created an application that aims to handle all activities in village scale governance, this application also has two roles. admin and user.This application is in the development stage. due to each other's busyness, so this project was stopped. but you can still visit",
       img: GOV,
+      link: "https://gov-management.vercel.app/login",
       color: "bg-orange-500",
       desc: "Collaborative project with my friends. village government management",
     },
@@ -42,6 +45,7 @@ function Project({
       tag: "React Native",
       color: "bg-purple-500",
       img: MoneyApp,
+      link: null,
       desc: "My latest project is in development stage. financial management application",
     },
     {
@@ -50,6 +54,7 @@ function Project({
       tag: "this is my own product which i am working on using react native. You can see more information by visit this repo github. All designs, starting from the layouts and promo banners, are the result of my creativity",
       color: "bg-teal-500",
       img: RestaurantApp,
+      link: "https://github.com/nurhamsah1998/Restaurant",
       desc: "Restaurant app with easy checkout flow",
     },
   ];
@@ -68,6 +73,7 @@ function Project({
               color?: string;
               tech?: string;
               img?: string;
+              link?: any;
             },
             index: number
           ) => {
@@ -81,8 +87,9 @@ function Project({
                 name={item.name}
                 bgcolorHover={item.color}
                 hoverText={item.desc}
+                link={item.link}
                 bgcolorCover="bg-slate-500"
-                btnHover="Learn More"
+                btnHover={item.link ? "Learn More" : "On going"}
               />
             );
           }
