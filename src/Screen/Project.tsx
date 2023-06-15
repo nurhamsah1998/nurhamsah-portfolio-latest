@@ -27,7 +27,7 @@ function Project({
       color: "bg-cyan-500",
       img: StudentPaymentApp,
       link: "https://www.youtube.com/watch?v=qnpGTjnhDUc",
-      tag: "Application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
+      tag: "Sorry for including this, this is my fullstack freelance project 😅. This application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
       desc: "Application for schools where its use is to record a list of student bills",
     },
     {

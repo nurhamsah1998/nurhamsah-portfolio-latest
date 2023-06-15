@@ -31,7 +31,7 @@ function Card({
         className={`w-1/2 ${order ? "order-2" : "order-1"} hidden md:block `}
       >
         <p className=" text-3xl font-bold">{name}</p>
-        <p className="mt-2 text-xl ">{tag}</p>
+        <p className="mt-2 text-md ">{tag}</p>
         <button className="btn mt-5">Learn More</button>
       </div>
       <div

@@ -1,22 +1,37 @@
 import { IoMenu } from "react-icons/io5";
+import React from "react";
 
 function Drawers({
   children,
   handleClickServices,
   handleClickApp,
+  handleClickLogo,
+  handleClickAboutMe,
 }: {
   children: JSX.Element;
-  handleClickServices?: () => void;
-  handleClickApp?: () => void;
+  handleClickServices?: (() => void) | any;
+  handleClickApp?: (() => void) | any;
+  handleClickLogo?: (() => void) | any;
+  handleClickAboutMe?: (() => void) | any;
 }) {
+  const [open, setOpen] = React.useState(false);
   return (
     <div className="drawer">
-      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+      <input
+        checked={open}
+        id="my-drawer-3"
+        type="checkbox"
+        className="drawer-toggle"
+      />
       <div className="drawer-content flex flex-col">
         {/* Drawers */}
         <div className="w-full navbar bg-white sticky top-0 z-[999]">
           <div className="flex-none lg:hidden">
-            <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+            <label
+              onClick={() => setOpen(!open)}
+              htmlFor="my-drawer-3"
+              className="btn btn-square btn-ghost"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -37,13 +52,24 @@ function Drawers({
             <ul className="menu menu-horizontal">
               {/* Drawers menu content here */}
               <li>
-                <a onClick={handleClickServices}>Services</a>
+                <a className=" text-sm" onClick={handleClickAboutMe}>
+                  About Me
+                </a>
               </li>
               <li>
-                <a onClick={handleClickApp}>App</a>
+                <a className=" text-sm" onClick={handleClickServices}>
+                  Services
+                </a>
               </li>
               <li>
-                <a>Logo Design</a>
+                <a className=" text-sm" onClick={handleClickApp}>
+                  App
+                </a>
+              </li>
+              <li>
+                <a className=" text-sm" onClick={handleClickLogo}>
+                  Logo Design
+                </a>
               </li>
             </ul>
           </div>
@@ -51,17 +77,59 @@ function Drawers({
         <div>{children}</div>
       </div>
       <div className="drawer-side">
-        <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-        <ul className="menu p-4 w-80 h-full bg-base-200">
+        <label
+          onClick={() => setOpen(!open)}
+          htmlFor="my-drawer-3"
+          className="drawer-overlay"
+        ></label>
+        <ul className="menu p-4 w-80 h-full bg-slate-800 text-white">
+          <div className="mb-10 bg-white p-4">
+            <p className=" text-slate-800 font-bold">MENU</p>
+          </div>
           {/* Sidebar content here */}
           <li>
-            <a>Services</a>
+            <a
+              className=" text-sm"
+              onClick={() => {
+                handleClickAboutMe();
+                setOpen(!open);
+              }}
+            >
+              About Me
+            </a>
           </li>
           <li>
-            <a>App</a>
+            <a
+              className=" text-sm"
+              onClick={() => {
+                handleClickServices();
+                setOpen(!open);
+              }}
+            >
+              Services
+            </a>
           </li>
           <li>
-            <a>Logo Design</a>
+            <a
+              className=" text-sm"
+              onClick={() => {
+                handleClickApp();
+                setOpen(!open);
+              }}
+            >
+              App
+            </a>
+          </li>
+          <li>
+            <a
+              className=" text-sm"
+              onClick={() => {
+                handleClickLogo();
+                setOpen(!open);
+              }}
+            >
+              Logo Design
+            </a>
           </li>
         </ul>
       </div>
