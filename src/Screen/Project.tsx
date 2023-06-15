@@ -27,8 +27,8 @@ function Project({
       color: "bg-cyan-500",
       img: StudentPaymentApp,
       link: "https://www.youtube.com/watch?v=qnpGTjnhDUc",
-      tag: "Sorry for including this, this is my fullstack freelance project 😅. This application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
-      desc: "Application for schools where its use is to record a list of student bills",
+      tag: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
+      desc: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills",
     },
     {
       name: "Gov Management App",
@@ -42,7 +42,7 @@ function Project({
     {
       name: "Money Management App",
       tech: "React Native | Native Base | Redux Toolkit",
-      tag: "React Native",
+      tag: "My latest personal project. Still in UI/UX design stage",
       color: "bg-purple-500",
       img: MoneyApp,
       link: null,

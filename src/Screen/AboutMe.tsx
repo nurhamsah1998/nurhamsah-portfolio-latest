@@ -18,7 +18,7 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
       <p className=" text-3xl font-bold text-center md:mb-5 mb-5 mt-3">
         AboutMe
       </p>
-      <p className=" text-xl text-center mx-auto mt-5">
+      <p className=" text-md text-center mx-auto mt-5 max-w-3xl">
         Hello, my name is Nurhamsah, nice to meet you. Very happy with writing
         code and designing a brand logo and I am interested in new knowledge
         about programming or designers in today's all-digital era. I hope that
