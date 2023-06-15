@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className=" h-[100vh] w-full grid items-center md:px-0 px-3">
       <div className="flex justify-evenly items-center">
-        <div>
+        <div className=" text-center md:text-left">
           <p className="  font-bold">Hello my name is,</p>
           <p className=" text-3xl font-bold">Nurhamsah</p>
           <p className=" text-xl">I'am Software Engineer and Designer</p>
@@ -14,7 +14,7 @@ function Header() {
           </p> */}
           {/* Made by
 @kennyotsu */}
-          <div className="loaders">
+          <div className="loaders flex justify-center md:justify-start">
             <div className="words">
               <span className="word text-3xl"></span>
               <span className="word text-3xl">React JS</span>
@@ -23,7 +23,7 @@ function Header() {
               <span className="word text-3xl">Designer</span>
             </div>
           </div>
-          <div className="mt-5 gap-5 flex">
+          <div className="mt-5 gap-5 flex justify-center md:justify-start">
             <button
               className="btn"
               onClick={() => {
@@ -42,7 +42,7 @@ function Header() {
               Resume
             </button>
           </div>
-          <div className="flex mt-5 gap-4 mb-5 md:mb-0">
+          <div className="flex justify-center md:justify-start mt-5 gap-4 mb-5 md:mb-0">
             {ContactMe.map((x: any, y: number) => (
               <button
                 onClick={() => {

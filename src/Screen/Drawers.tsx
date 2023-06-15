@@ -19,6 +19,9 @@ function Drawers({
     <div className="drawer">
       <input
         checked={open}
+        onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+          return;
+        }}
         id="my-drawer-3"
         type="checkbox"
         className="drawer-toggle"

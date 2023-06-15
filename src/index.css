@@ -67,79 +67,22 @@
   height: 600px;
   background-color: pink;
 }
-.ABOUTME_ANIM {
-  z-index: -1;
-  animation-name: ABOUTME_ANIM_CIRCLE_ANIMATION_1;
+
+.ANIMATION_ROUND {
+  animation-name: ANIMATION_ROUND;
   animation-duration: 10s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-.ABOUTME_ANIM_1 {
-  z-index: -1;
-  animation-name: ABOUTME_ANIM_CIRCLE_ANIMATION_2;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-.ABOUTME_ANIM_2 {
-  z-index: -1;
-  animation-name: ABOUTME_ANIM_CIRCLE_ANIMATION_3;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+@keyframes ANIMATION_ROUND {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
 }
 
-@keyframes ABOUTME_ANIM_CIRCLE_ANIMATION_3 {
-  0% {
-    transform: translate(-5%, 3%);
-  }
-  25% {
-    transform: translate(3%, 6%);
-  }
-  50% {
-    transform: translate(9%, -3%);
-  }
-  75% {
-    transform: translate(-4%, 8%);
-  }
-  100% {
-    transform: translate(-5%, 3%);
-  }
-}
-@keyframes ABOUTME_ANIM_CIRCLE_ANIMATION_2 {
-  0% {
-    transform: translate(-11%, 19%);
-  }
-  25% {
-    transform: translate(23%, 22%);
-  }
-  50% {
-    transform: translate(18%, -17%);
-  }
-  75% {
-    transform: translate(-26%, 15%);
-  }
-  100% {
-    transform: translate(-11%, 19%);
-  }
-}
-@keyframes ABOUTME_ANIM_CIRCLE_ANIMATION_1 {
-  0% {
-    transform: translate(-21%, 11%);
-  }
-  25% {
-    transform: translate(23%, 22%);
-  }
-  50% {
-    transform: translate(18%, -7%);
-  }
-  75% {
-    transform: translate(-16%, 25%);
-  }
-  100% {
-    transform: translate(-21%, 11%);
-  }
-}
 @keyframes CIRCLE_ANIMATION {
   from {
     transform: rotate(0deg);
