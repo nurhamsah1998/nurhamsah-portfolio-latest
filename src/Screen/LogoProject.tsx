@@ -6,8 +6,10 @@ function LogoProject({ logoRef }: { logoRef: any }) {
   const widthContainer = window.innerWidth || 300;
   return (
     <div className="p-0" ref={logoRef}>
-      <p className=" text-3xl font-bold text-center md:mb-20 mb-10">
-        My Logo Design
+      <p className=" text-3xl font-bold text-center">Logo Designer</p>
+      <p className=" md:mb-20 mb-10 mt-3 mx-auto text-center max-w-3xl">
+        This is the best logo I made. by using Inkscape and GIMP I can create a
+        logo with an interesting philosophy and a good meaning
       </p>
       {/* <div className={`hidden xl:block w-1/3`}>
         <Marquee className={`bg-red-500 `}>

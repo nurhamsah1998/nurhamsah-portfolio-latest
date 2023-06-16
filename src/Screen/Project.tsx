@@ -21,33 +21,25 @@ function Project({
       link: "https://bertanya.vercel.app/",
       desc: "Questions and answers project with user features can earn badges",
     },
-    {
-      name: "Student Payment App",
-      tech: "React Js (Minimal UI) | Material UI | React Query | Express | Node Js | Sequalize | mySQL",
-      color: "bg-cyan-500",
-      img: StudentPaymentApp,
-      link: "https://www.youtube.com/watch?v=qnpGTjnhDUc",
-      tag: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
-      desc: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills",
-    },
-    {
-      name: "Gov Management App",
-      tech: "React JS | Material UI | React Query | Supabase",
-      tag: "I and my friend created an application that aims to handle all activities in village scale governance, this application also has two roles. admin and user.This application is in the development stage. due to each other's busyness, so this project was stopped. but you can still visit",
-      img: GOV,
-      link: "https://gov-management.vercel.app/login",
-      color: "bg-orange-500",
-      desc: "Collaborative project with my friends. village government management",
-    },
-    {
-      name: "Money Management App",
-      tech: "React Native | Native Base | Redux Toolkit",
-      tag: "My latest personal project. Still in UI/UX design stage",
-      color: "bg-purple-500",
-      img: MoneyApp,
-      link: null,
-      desc: "My latest project is in development stage. financial management application",
-    },
+    // {
+    //   name: "Student Payment App",
+    //   tech: "React Js (Minimal UI) | Material UI | React Query | Express | Node Js | Sequalize | mySQL",
+    //   color: "bg-cyan-500",
+    //   img: StudentPaymentApp,
+    //   link: "https://www.youtube.com/watch?v=qnpGTjnhDUc",
+    //   tag: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
+    //   desc: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills",
+    // },
+    // {
+    //   name: "Gov Management App",
+    //   tech: "React JS | Material UI | React Query | Supabase",
+    //   tag: "I and my friend created an application that aims to handle all activities in village scale governance, this application also has two roles. admin and user.This application is in the development stage. due to each other's busyness, so this project was stopped. but you can still visit",
+    //   img: GOV,
+    //   link: "https://gov-management.vercel.app/login",
+    //   color: "bg-orange-500",
+    //   desc: "Collaborative project with my friends. village government management",
+    // },
+
     {
       name: "Restaurant App",
       tech: "React Native | React Native Paper",
@@ -57,11 +49,25 @@ function Project({
       link: "https://github.com/nurhamsah1998/Restaurant",
       desc: "Restaurant app with easy checkout flow",
     },
+    {
+      name: "Money Management App",
+      tech: "React Native | Native Base | Redux Toolkit",
+      tag: "Financial management application This is my newest product which is still under development. i will focus on this app for android users",
+      color: "bg-purple-500",
+      img: MoneyApp,
+      link: null,
+      desc: "Financial management application This is my newest product which is still under development. i will focus on this app for android users",
+    },
   ];
   return (
     <div ref={projectRef} className="md:my-0  my-5">
-      <p className=" text-3xl text-center font-bold md:mb-20 mb-10 ">
-        My Personal Project App
+      <p className=" text-3xl text-center font-bold ">
+        Web & Mobile Applications
+      </p>
+      <p className=" md:mb-20 mb-10 mt-3 mx-auto text-center max-w-3xl">
+        Here are some of the best examples of my apps. website apps and mobile
+        apps. These are all my personal projects that I designed myself, from
+        UX/UX app flows to App Logos
       </p>
       <div className="grid gap-10 md:gap-20 justify-center">
         {webApplication.map(

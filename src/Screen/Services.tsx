@@ -16,7 +16,7 @@ function Services({ serviceRef }: { serviceRef?: any }) {
       icon: <MobileApplication size={220} />,
     },
     {
-      name: "Logo Maker",
+      name: "Logo Designer",
       desc: "Branding your product by creating the best and most meaningful logo here",
       icon: <Designer size={220} />,
     },
