@@ -30,7 +30,7 @@ export const ContactMe = [
   },
   {
     icon: <IoLogoInstagram size={25} />,
-    url: "https://www.instagram.com/nurhamsah_1998/",
+    url: "https://www.instagram.com/nurhamsah_tech/",
   },
 ];
 function Footer() {
