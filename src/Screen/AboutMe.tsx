@@ -40,10 +40,13 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
         AboutMe
       </p>
       <p className=" text-md text-center mx-auto mt-5 max-w-3xl">
-        Hello, my name is Nurhamsah, nice to meet you. Very happy with writing
-        code and designing a brand logo and I am interested in new knowledge
-        about programming or designers in today's all-digital era. I hope that
-        when you see my profile, you are interested in working with me.
+        Hello my friends, introduce my name is Nurhamsah, usually called nur.
+        For some reason, I'm very happy with this increasingly fast
+        technological development, especially in the field of software
+        engineering and graphic design. therefore I try to create something that
+        can help people to solve problems, especially in the IT technical field.
+        I hope we can work together to make this happen. sorry for too many
+        words, please enjoy my sample project
       </p>
     </div>
   );
