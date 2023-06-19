@@ -32,7 +32,13 @@ function Card({
       >
         <p className=" text-3xl font-bold">{name}</p>
         <p className="mt-2 text-md ">{tag}</p>
-        <button className="btn mt-5">Learn More</button>
+        <button
+          onClick={() => (window.location.href = link)}
+          disabled={!Boolean(link)}
+          className="btn mt-5"
+        >
+          {Boolean(link) ? "Learn More" : "On going"}
+        </button>
       </div>
       <div
         className={`max-w-[420px] shadow-lg h-full md:h-80 relative rounded-2xl overflow-hidden ${

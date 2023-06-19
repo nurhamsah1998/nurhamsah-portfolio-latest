@@ -44,32 +44,34 @@ function Footer() {
       </div> */}
       <div className="md:flex grid justify-between">
         <div className=" w-[350px] p-5">
-          <p className="text-white text-3xl font-extrabold">Nurhamsah</p>
-          <p className="text-white">
+          <p className="text-white text-xl font-extrabold">Nurhamsah</p>
+          <p className="text-white text-sm">
             Jl. Ngadi Kec. Mojo Kab. Kediri 64162, Jawa Timur, Indonesia
           </p>
         </div>
         <div className="p-5">
-          <p className="text-white text-3xl font-extrabold">Experience Work</p>
+          <p className="text-white text-xl font-extrabold">Experience Work</p>
           <div className="md:flex grid gap-0 md:gap-[70px]">
             <div className="mt-3">
-              <p className="text-white  text-xl font-bold">Code Art Online</p>
-              <p className="text-white">as Frontend</p>
-              <p className="text-white">React JS | Next JS | React Native</p>
-              <p className="text-white text-sm">Dec 2021 - Feb 2023</p>
+              <p className="text-white font-bold">Code Art Online</p>
+              <p className="text-white text-sm">as Frontend</p>
+              <p className="text-white text-sm">
+                React JS | Next JS | React Native
+              </p>
+              <p className="text-white text-xs">Dec 2021 - Feb 2023</p>
             </div>
             <div className="mt-3">
-              <p className="text-white  text-xl font-bold">Freelance</p>
-              <p className="text-white">as Fullstack</p>
-              <p className="text-white">React JS | Express | mySQL</p>
-              <p className="text-white text-sm">Nov 2022 - present</p>
+              <p className="text-white font-bold">Freelance</p>
+              <p className="text-white text-sm">as Fullstack</p>
+              <p className="text-white text-sm">React JS | Express | mySQL</p>
+              <p className="text-white text-xs">Nov 2022 - present</p>
             </div>
           </div>
           <div className="mt-3">
-            <p className="text-white  text-xl font-bold">Feedloop</p>
-            <p className="text-white">as Frontend</p>
-            <p className="text-white">React JS</p>
-            <p className="text-white text-sm">Mar 2023 - present</p>
+            <p className="text-white font-bold">Feedloop</p>
+            <p className="text-white text-sm">as Frontend</p>
+            <p className="text-white text-sm">React JS</p>
+            <p className="text-white text-xs">Mar 2023 - present</p>
           </div>
         </div>
       </div>

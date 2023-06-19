@@ -42,8 +42,8 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
       <p className=" text-md text-center mx-auto mt-5 max-w-3xl">
         Hello my friends, introduce my name is Nurhamsah, usually called nur.
         For some reason, I'm very happy with this increasingly fast
-        technological development, especially in the field of software
-        engineering and graphic design. therefore I try to create something that
+        technological development, especially in the field of Software
+        Engineering and Graphic Design. therefore I try to create something that
         can help people to solve problems, especially in the IT technical field.
         I hope we can work together to make this happen. sorry for too many
         words, please enjoy my sample project
