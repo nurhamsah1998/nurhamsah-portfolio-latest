@@ -14,7 +14,7 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
       <div className=" relative">
         <div className=" bg-transparent w-[360px] overflow-hidden h-[360px] relative flex justify-center items-center rounded-full mx-auto">
           <div
-            className=" h-[500px] ANIMATION_ROUNDa z-[0] bg-slate-500 absolute hidden md:block"
+            className=" h-[500px] ANIMATION_ROUNDa z-[0] bg-slate-400 absolute "
             style={{
               transform: `rotate(${time * 6}deg)`,
               transition: "1s",
@@ -22,7 +22,7 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
             }}
           />
           <div className=" w-[330px] z-[9] h-[330px] bg-white flex justify-center items-center rounded-full">
-            <div className="bg-slate-400 z-[9]  w-[320px] h-[320px]  rounded-full flex justify-center items-center">
+            <div className="bg-slate-300 z-[9]  w-[320px] h-[320px]  rounded-full flex justify-center items-center">
               <div
                 className=" w-[300px] h-[300px] rounded-full"
                 style={{

@@ -4,8 +4,8 @@ import HeaderIcon from "assets/SVG/HeaderIcon";
 function Header() {
   return (
     <div className=" h-[100vh] w-full grid items-center md:px-0 px-3">
-      <div className="flex justify-evenly items-center">
-        <div className=" text-center md:text-left">
+      <div className="flex relative justify-evenly items-center">
+        <div className=" text-center md:text-left z-[20]">
           <p className="  font-bold">Hello my name is,</p>
           <p className=" text-3xl font-bold">Nurhamsah</p>
           <p className=" text-xl">I'am Software Engineer and Designer</p>
@@ -55,9 +55,12 @@ function Header() {
             ))}
           </div>
         </div>
-        <div className="relative hidden md:block">
+        <div className="md:relative absolute md:blur-none blur-md">
           <div className="HEADER_ANIMATION relative z-10 flex justify-center items-center ">
-            <HeaderIcon size={400} />
+            <div className="w-[200px] block md:hidden h-[200px] rounded-full bg-slate-200" />
+            <div className="hidden md:block">
+              <HeaderIcon size={400} />
+            </div>
             {/* <div
               className="h-[300px] w-[300px] CIRCLE_ANIMATION top-0 rounded-full absolute
           "
