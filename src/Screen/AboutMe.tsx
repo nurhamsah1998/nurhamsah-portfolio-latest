@@ -5,7 +5,6 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setTime((prev: any) => prev + 1);
-      setTime((prev: any) => new Date().getSeconds());
     }, 1000);
     clearInterval(time);
   }, []);
@@ -13,18 +12,25 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
     <div ref={aboutMeRef} className=" w-full">
       <div className=" relative">
         <div className=" bg-transparent w-[360px] overflow-hidden h-[360px] relative flex justify-center items-center rounded-full mx-auto">
-          <div
-            className=" h-[500px] ANIMATION_ROUNDa z-[0] bg-slate-400 absolute "
-            style={{
-              transform: `rotate(${time * 6}deg)`,
-              transition: "1s",
-              width: `${20 + time * 6}px`,
-            }}
-          />
+          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND z-[100] rounded-full absolute ">
+            <div className="w-[20px] h-[20px] bg-slate-400 float-right " />
+          </div>
+          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND1 z-[100] rounded-full absolute ">
+            <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full" />
+          </div>
+          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND2 z-[100] rounded-full absolute ">
+            <div className="w-[20px] h-[20px] bg-slate-400 float-right " />
+          </div>
+          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND3 z-[100] rounded-full absolute ">
+            <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full" />
+          </div>
+          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND4 z-[100] rounded-full absolute ">
+            <div className="w-[20px] h-[20px] bg-slate-400 float-right " />
+          </div>
           <div className=" w-[330px] z-[9] h-[330px] bg-white flex justify-center items-center rounded-full">
-            <div className="bg-slate-300 z-[9]  w-[320px] h-[320px]  rounded-full flex justify-center items-center">
+            <div className="bg-slate-300 z-[9]  w-[310px] h-[310px]  rounded-full flex justify-center items-center">
               <div
-                className=" w-[300px] h-[300px] rounded-full"
+                className=" w-[290px] h-[290px] rounded-full"
                 style={{
                   backgroundImage: "url(/profile_low_size_transparent.png)",
                   backgroundPosition: "42% 45%",
