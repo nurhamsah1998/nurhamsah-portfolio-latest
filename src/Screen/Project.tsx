@@ -60,7 +60,7 @@ function Project({
     },
   ];
   return (
-    <div ref={projectRef} className="md:my-0  my-5">
+    <div ref={projectRef} className="md:my-0  my-5 max-w-[1400px] mx-auto">
       <p className=" text-3xl text-center font-bold ">
         Web & Mobile Applications
       </p>
