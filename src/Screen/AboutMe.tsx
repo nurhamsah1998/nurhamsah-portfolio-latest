@@ -11,6 +11,9 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
   return (
     <div ref={aboutMeRef} className=" w-full">
       <div className=" relative">
+        <div className="left-0 right-0 bottom-0 w-full h-full flex justify-center items-start absolute">
+          <div className="w-[320px] h-[320px] rounded-full ANIMATION_BG blur-lg bg-slate-400 "></div>
+        </div>
         <div className=" bg-transparent w-[360px] overflow-hidden h-[360px] relative flex justify-center items-center rounded-full mx-auto">
           {/* <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND z-[100] rounded-full absolute ">
             <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full" />
@@ -45,7 +48,7 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
       <p className=" text-3xl font-bold text-center md:mb-5 mb-5 mt-5">
         AboutMe
       </p>
-      <p className=" text-md text-center mx-auto mt-5 max-w-3xl">
+      <p className=" text-md text-center mx-auto mt-5  max-w-sm md:max-w-3xl">
         Hello my friends, introduce my name is Nurhamsah, usually called nur.
         For some reason, I'm very happy with this increasingly fast
         technological development, especially in the field of Software

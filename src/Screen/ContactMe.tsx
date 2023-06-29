@@ -6,7 +6,7 @@ function ContactMe() {
       <p className=" text-md md:text-3xl font-bold uppercase">
         let's make your dream come true
       </p>
-      <p className=" text-sm md:text-md mt-3">
+      <p className=" text-sm md:text-md mt-3 max-w-sm md:max-w-3xl mx-auto">
         Feel free to contact me. there are many creative ideas that we can make
         happen so what are you waiting for, let's discuss it
       </p>

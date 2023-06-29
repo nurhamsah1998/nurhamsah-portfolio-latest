@@ -17,7 +17,7 @@ function Project({
       tech: "Next Js | Tailwind CSS | React Query | Supabase",
       tools: ["Next JS", "Tailwind CSS", "React Query", "Supabase", "Context"],
       tag: "The project I made with next js and tailwind css. starting from UI/UX design and the logo is the result of my creativity.This app uses pure Tailwind CSS, Next JS and Supabase. Application with the use of Question & Answer. so the user can ask questions and provide answers, and in this application the user can get several badges as a reward for what he has achieved. This application has an update. let's check now!",
-      color: "bg-pink-500",
+      color: "bg-teal-600",
       img: BertanyaApp,
       link: "https://bertanya.vercel.app/",
       desc: "Questions and answers project with user features can earn badges",
@@ -53,7 +53,7 @@ function Project({
         "Gesture Handler",
       ],
       tag: "this is my own product which i am working on using react native. You can see more information by visit this repo github. All designs, starting from the layouts and promo banners, are the result of my creativity",
-      color: "bg-teal-500",
+      color: "bg-red-500",
       img: RestaurantApp,
       link: "https://github.com/nurhamsah1998/Restaurant",
       desc: "Restaurant app with easy checkout flow",
@@ -70,7 +70,7 @@ function Project({
         "Gesture Handler",
       ],
       tag: "Financial management application This is my newest product which is still under development. i will focus on this app for android users",
-      color: "bg-purple-500",
+      color: "bg-orange-500",
       img: MoneyApp,
       link: null,
       desc: "Financial management application This is my newest product which is still under development. i will focus on this app for android users",
@@ -81,7 +81,7 @@ function Project({
       <p className=" text-3xl text-center font-bold ">
         Web & Mobile Applications
       </p>
-      <p className=" md:mb-20 mb-10 mt-3 mx-auto text-center max-w-3xl">
+      <p className=" md:mb-20 mb-10 mt-3 mx-auto text-center  max-w-sm md:max-w-3xl">
         Here are some of the best examples of my apps. website apps and mobile
         apps. These are all my personal projects that I designed myself, from
         UX/UX app flows to App Logos
@@ -114,19 +114,31 @@ function Project({
                     hoverText={item.desc}
                     link={item.link}
                     bgcolorCover="bg-slate-500"
-                    btnHover={item.link ? "Learn More" : "On going"}
+                    btnHover={item.link ? "Let's Talk" : "On going"}
                     tools={item.tools}
                   />
                 </div>
-                <div className="flex md:hidden gap-2 mt-3 justify-center flex-wrap">
-                  {item.tools?.map((list: any, indexList: number) => (
-                    <p
-                      key={indexList}
-                      className=" bg-slate-600 py-1 px-3 rounded-full text-white text-sm"
-                    >
-                      {list}
-                    </p>
-                  ))}
+
+                <div className="block md:hidden text-center mt-3">
+                  <p className=" text-3xl font-bold">{item.name}</p>
+                  <div className="flex md:hidden gap-1 justify-center flex-wrap max-w-sm md:max-w-3xl mx-auto">
+                    {item.tools?.map((list: any, indexList: number) => (
+                      <p
+                        key={indexList}
+                        className=" bg-slate-600 py-1 px-3 rounded-full text-white text-xs font-bold"
+                      >
+                        {list}
+                      </p>
+                    ))}
+                  </div>
+                  <p className="mt-5 text-md  max-w-sm mx-auto">{item.tag}</p>
+                  <button
+                    onClick={() => (window.location.href = item.link)}
+                    disabled={!Boolean(item.link)}
+                    className="btn mt-5 w-full"
+                  >
+                    {Boolean(item.link) ? "Learn More" : "On going"}
+                  </button>
                 </div>
               </div>
             );
