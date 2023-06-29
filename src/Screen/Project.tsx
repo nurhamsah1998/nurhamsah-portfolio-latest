@@ -15,6 +15,7 @@ function Project({
     {
       name: "Bertanya",
       tech: "Next Js | Tailwind CSS | React Query | Supabase",
+      tools: ["Next JS", "Tailwind CSS", "React Query", "Supabase", "Context"],
       tag: "The project I made with next js and tailwind css. starting from UI/UX design and the logo is the result of my creativity.This app uses pure Tailwind CSS, Next JS and Supabase. Application with the use of Question & Answer. so the user can ask questions and provide answers, and in this application the user can get several badges as a reward for what he has achieved. This application has an update. let's check now!",
       color: "bg-pink-500",
       img: BertanyaApp,
@@ -43,6 +44,14 @@ function Project({
     {
       name: "Restaurant App",
       tech: "React Native | React Native Paper",
+      tools: [
+        "React Native",
+        "React Native Paper",
+        "React Navigation",
+        "React Redux",
+        "Reanimated",
+        "Gesture Handler",
+      ],
       tag: "this is my own product which i am working on using react native. You can see more information by visit this repo github. All designs, starting from the layouts and promo banners, are the result of my creativity",
       color: "bg-teal-500",
       img: RestaurantApp,
@@ -52,6 +61,14 @@ function Project({
     {
       name: "Money Management App",
       tech: "React Native | Native Base | Redux Toolkit",
+      tools: [
+        "React Native",
+        "React Navigation",
+        "Native Base",
+        "React Redux",
+        "Reanimated",
+        "Gesture Handler",
+      ],
       tag: "Financial management application This is my newest product which is still under development. i will focus on this app for android users",
       color: "bg-purple-500",
       img: MoneyApp,
@@ -80,23 +97,38 @@ function Project({
               tech?: string;
               img?: string;
               link?: any;
+              tools?: any;
             },
             index: number
           ) => {
             return (
-              <Card
-                coverContent={<img src={item.img} />}
-                key={index}
-                order={Boolean(index % 2)}
-                tech={item.tech}
-                tag={item.tag}
-                name={item.name}
-                bgcolorHover={item.color}
-                hoverText={item.desc}
-                link={item.link}
-                bgcolorCover="bg-slate-500"
-                btnHover={item.link ? "Learn More" : "On going"}
-              />
+              <div key={index} className=" border-b-2 border-slate-200 pb-10">
+                <div className=" flex justify-center">
+                  <Card
+                    coverContent={<img src={item.img} />}
+                    order={Boolean(index % 2)}
+                    tech={item.tech}
+                    tag={item.tag}
+                    name={item.name}
+                    bgcolorHover={item.color}
+                    hoverText={item.desc}
+                    link={item.link}
+                    bgcolorCover="bg-slate-500"
+                    btnHover={item.link ? "Learn More" : "On going"}
+                    tools={item.tools}
+                  />
+                </div>
+                <div className="flex md:hidden gap-2 mt-3 justify-center flex-wrap">
+                  {item.tools?.map((list: any, indexList: number) => (
+                    <p
+                      key={indexList}
+                      className=" bg-slate-600 py-1 px-3 rounded-full text-white text-sm"
+                    >
+                      {list}
+                    </p>
+                  ))}
+                </div>
+              </div>
             );
           }
         )}

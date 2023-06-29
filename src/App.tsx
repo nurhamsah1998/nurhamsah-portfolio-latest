@@ -78,6 +78,11 @@ function App() {
           </div>
         </div>
       </Drawers>
+      <div className="absolute bottom-0 right-0 left-0 p-5 flex md:justify-start justify-center ">
+        <p className="bg-slate-300 text-slate-700 shadow-lg animate-pulse inline font-bold py-2 px-5 rounded-md ">
+          Under Development stage 95%
+        </p>
+      </div>
     </>
   );
 }

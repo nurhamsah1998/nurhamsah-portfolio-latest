@@ -12,6 +12,7 @@ function Card({
   name,
   order,
   link,
+  tools,
 }: {
   order?: boolean;
   hoverText?: string;
@@ -23,6 +24,7 @@ function Card({
   bgcolorCover?: string;
   name?: string;
   link?: string | any;
+  tools?: any[];
 }) {
   const navigation: NavigateFunction = useNavigate();
   return (
@@ -32,6 +34,16 @@ function Card({
       >
         <p className=" text-3xl font-bold">{name}</p>
         <p className="mt-2 text-md ">{tag}</p>
+        <div className="flex gap-3 mt-3 justify-start flex-wrap">
+          {tools?.map((item, index) => (
+            <p
+              key={index}
+              className=" bg-slate-600 py-1 px-3 rounded-full text-white text-sm"
+            >
+              {item}
+            </p>
+          ))}
+        </div>
         <button
           onClick={() => (window.location.href = link)}
           disabled={!Boolean(link)}
@@ -54,9 +66,9 @@ function Card({
           <div className=" w-[130px] h-[130px] HEADER_ANIMATION absolute bg-slate-100 opacity-[0.2] bottom-[5%] left-[5%] rounded-full"></div>
           <div className="text-center p-3 z-10 ">
             <p className=" text-xl font-thin">{hoverText}</p>
-            <div className="mt-2 font-bold">
+            {/* <div className="mt-2 font-bold">
               <p className=" text-md">{tech}</p>
-            </div>
+            </div> */}
             <button
               disabled={!Boolean(link)}
               onClick={() => (window.location.href = link)}

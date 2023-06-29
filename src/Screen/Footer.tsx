@@ -35,7 +35,7 @@ export const ContactMe = [
 ];
 function Footer() {
   return (
-    <div className="bg-slate-700 relative mt-10">
+    <div className="bg-slate-700 relative mt-10 pt-10">
       {/* <div className=" justify-center items-center flex h-full">
         <p className="text-white font-bold italic text-center">
           " It's better to be tormented by discipline than to be tormented by
@@ -49,6 +49,18 @@ function Footer() {
             <p className="text-white text-sm">
               Jl. Ngadi Kec. Mojo Kab. Kediri 64162, Jawa Timur, Indonesia
             </p>
+            <div className="flex items-center justify-start mt-3 text-white gap-4 mb-5 md:mb-0">
+              {ContactMe.map((x: any, y: number) => (
+                <button
+                  onClick={() => {
+                    window.location.href = x.url;
+                  }}
+                  key={y}
+                >
+                  {x.icon}
+                </button>
+              ))}
+            </div>
           </div>
           <div className="p-5">
             <p className="text-white text-xl font-extrabold">Experience Work</p>
@@ -76,20 +88,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className=" text-white p-5 text-center right-5 justify-center md:justify-between grid md:flex items-center">
-          <div className="flex items-center justify-center gap-4 mb-5 md:mb-0">
-            {ContactMe.map((x: any, y: number) => (
-              <button
-                onClick={() => {
-                  window.location.href = x.url;
-                }}
-                key={y}
-              >
-                {x.icon}
-              </button>
-            ))}
-          </div>
-          <p className="text-xs">Copyright Nurhamsah 2023</p>
+        <div className=" text-white p-5 text-center mt-10">
+          <p className="text-xs mb-10">Copyright Nurhamsah 2023</p>
         </div>
       </div>
     </div>

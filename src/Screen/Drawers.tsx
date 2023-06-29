@@ -28,7 +28,7 @@ function Drawers({
       />
       <div className="drawer-content flex flex-col">
         {/* Drawers */}
-        <div className="w-full navbar bg-white sticky top-0 z-[999]">
+        <div className="max-w-[1400px] mx-auto navbar bg-white sticky top-0 z-[999]">
           <div className="flex-none lg:hidden">
             <label
               onClick={() => setOpen(!open)}
