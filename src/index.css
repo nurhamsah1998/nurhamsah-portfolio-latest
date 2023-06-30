@@ -110,26 +110,26 @@
 }
 .ANIMATION_BG {
   animation-name: ANIMATION_BG;
-  animation-duration: 13s;
+  animation-duration: 3s;
   animation-timing-function: ease;
   animation-iteration-count: infinite;
   transform-origin: 0% 50% !important;
 }
 @keyframes ANIMATION_BG {
   0% {
-    transform: translate(-5%, 6%);
+    transform: translate(-3%, 4%);
   }
   25% {
-    transform: translate(2%, -1%);
+    transform: translate(2%, 2%);
   }
   50% {
-    transform: translate(-3%, 6%);
+    transform: translate(3%, 3%);
   }
   75% {
-    transform: translate(5%, 9%);
+    transform: translate(6%, 9%);
   }
   100% {
-    transform: translate(-5%, 6%);
+    transform: translate(-3%, 4%);
   }
 }
 

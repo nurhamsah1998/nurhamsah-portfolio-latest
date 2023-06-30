@@ -22,15 +22,7 @@ function Project({
       link: "https://bertanya.vercel.app/",
       desc: "Questions and answers project with user features can earn badges",
     },
-    // {
-    //   name: "Student Payment App",
-    //   tech: "React Js (Minimal UI) | Material UI | React Query | Express | Node Js | Sequalize | mySQL",
-    //   color: "bg-cyan-500",
-    //   img: StudentPaymentApp,
-    //   link: "https://www.youtube.com/watch?v=qnpGTjnhDUc",
-    //   tag: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills. there is also an admin role that can block student accounts. For more details, you can see the video documentation.",
-    //   desc: "Sorry for including this, this is my fullstack freelance project 😅. Application for schools where its use is to record a list of student bills",
-    // },
+
     // {
     //   name: "Gov Management App",
     //   tech: "React JS | Material UI | React Query | Supabase",
@@ -59,7 +51,25 @@ function Project({
       desc: "Restaurant app with easy checkout flow",
     },
     {
-      name: "Money Management App",
+      name: "EDU club",
+      tech: "React Js (Minimal UI) | Material UI | React Query | Express | Node Js | Sequalize | mySQL",
+      tools: [
+        "React Js (Minimal UI)",
+        "Material UI",
+        "Context",
+        "React Query",
+        "Express",
+        "Sequalize",
+        "mySQL",
+      ],
+      color: "bg-blue-500",
+      img: StudentPaymentApp,
+      link: null,
+      tag: "This is a personal application that I'm still developing today. In the future this application will function as school management, all school activities including the learning process, practice exams, libraries, student communities, research communities and many more can be done in one application.",
+      desc: "This is a personal application that I'm still developing today. In the future this application will function as school management, all school activities including the learning process, practice exams, libraries, student communities, research communities and many more can be done in one application.",
+    },
+    {
+      name: "Money",
       tech: "React Native | Native Base | Redux Toolkit",
       tools: [
         "React Native",

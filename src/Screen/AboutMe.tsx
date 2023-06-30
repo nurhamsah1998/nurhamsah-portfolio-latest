@@ -12,7 +12,7 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
     <div ref={aboutMeRef} className=" w-full">
       <div className=" relative">
         <div className="left-0 right-0 bottom-0 w-full h-full flex justify-center items-start absolute">
-          <div className="w-[320px] h-[320px] rounded-full ANIMATION_BG blur-lg bg-slate-400 "></div>
+          <div className="w-[290px] h-[290px] rounded-full ANIMATION_BG blur-xl bg-slate-400 "></div>
         </div>
         <div className=" bg-transparent w-[360px] overflow-hidden h-[360px] relative flex justify-center items-center rounded-full mx-auto">
           {/* <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND z-[100] rounded-full absolute ">
