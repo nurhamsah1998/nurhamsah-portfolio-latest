@@ -27,7 +27,7 @@ function Services({ serviceRef }: { serviceRef?: any }) {
         <p className="text-3xl text-center font-semibold md:mb-20 mb-10 ">
           My Services
         </p>
-        <div className="flex flex-wrap items-center w-full xs:justify-between lg:justify-between justify-center  ">
+        <div className="flex flex-wrap items-center w-full gap-10 xs:justify-between lg:justify-between justify-center  ">
           {servicesOffer.map((item: any, index: any) => (
             <div key={index} className=" max-w-xs ">
               <div className="flex justify-center bg-white shadow-lg rounded-2xl">

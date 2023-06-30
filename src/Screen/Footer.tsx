@@ -66,12 +66,10 @@ function Footer() {
             <p className="text-white text-xl font-extrabold">Experience Work</p>
             <div className="md:flex grid gap-0 md:gap-[70px]">
               <div className="mt-3">
-                <p className="text-white font-bold">Code Art Online</p>
+                <p className="text-white font-bold">Feedloop</p>
                 <p className="text-white text-sm">as Frontend</p>
-                <p className="text-white text-sm">
-                  React JS | Next JS | React Native
-                </p>
-                <p className="text-white text-xs">Dec 2021 - Feb 2023</p>
+                <p className="text-white text-sm">React JS</p>
+                <p className="text-white text-xs">Mar 2023 - present</p>
               </div>
               <div className="mt-3">
                 <p className="text-white font-bold">Freelance / School App</p>
@@ -79,12 +77,14 @@ function Footer() {
                 <p className="text-white text-sm">React JS | Express | mySQL</p>
                 <p className="text-white text-xs">Nov 2022 - present</p>
               </div>
-            </div>
-            <div className="mt-3">
-              <p className="text-white font-bold">Feedloop</p>
-              <p className="text-white text-sm">as Frontend</p>
-              <p className="text-white text-sm">React JS</p>
-              <p className="text-white text-xs">Mar 2023 - present</p>
+              <div className="mt-3">
+                <p className="text-white font-bold">Code Art Online</p>
+                <p className="text-white text-sm">as Frontend</p>
+                <p className="text-white text-sm">
+                  React JS | Next JS | React Native
+                </p>
+                <p className="text-white text-xs">Dec 2021 - Feb 2023</p>
+              </div>
             </div>
           </div>
         </div>
