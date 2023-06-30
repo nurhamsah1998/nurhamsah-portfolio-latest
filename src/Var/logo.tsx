@@ -17,6 +17,7 @@ import C16 from "assets/logoProhect/16.png";
 import C17 from "assets/logoProhect/17.png";
 import C18 from "assets/logoProhect/18.png";
 import C19 from "assets/logoProhect/19.png";
+import C20 from "assets/logoProhect/20.png";
 
 export const LOGOPROJECT = [
   C1,
@@ -38,4 +39,5 @@ export const LOGOPROJECT = [
   C16,
   C17,
   C19,
+  C20,
 ];
