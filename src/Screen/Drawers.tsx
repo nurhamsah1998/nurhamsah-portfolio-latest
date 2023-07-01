@@ -1,4 +1,3 @@
-import { IoMenu } from "react-icons/io5";
 import React from "react";
 
 function Drawers({
@@ -9,12 +8,24 @@ function Drawers({
   handleClickAboutMe,
 }: {
   children: JSX.Element;
-  handleClickServices?: (() => void) | any;
-  handleClickApp?: (() => void) | any;
-  handleClickLogo?: (() => void) | any;
-  handleClickAboutMe?: (() => void) | any;
+  handleClickServices?:
+    | React.MouseEventHandler<HTMLAnchorElement>
+    | (() => void)
+    | any;
+  handleClickApp?:
+    | React.MouseEventHandler<HTMLAnchorElement>
+    | (() => void)
+    | any;
+  handleClickLogo?:
+    | React.MouseEventHandler<HTMLAnchorElement>
+    | (() => void)
+    | any;
+  handleClickAboutMe?:
+    | React.MouseEventHandler<HTMLAnchorElement>
+    | (() => void)
+    | any;
 }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState<boolean>(false);
   return (
     <div className="drawer">
       <input
@@ -28,7 +39,7 @@ function Drawers({
       />
       <div className="drawer-content flex flex-col">
         {/* Drawers */}
-        <div className="max-w-[1400px] mx-auto navbar bg-white sticky top-0 z-[999]">
+        <div className="px-2 md:px-20  mx-auto navbar bg-white sticky top-0 z-[999]">
           <div className="flex-none lg:hidden">
             <label
               onClick={() => setOpen(!open)}

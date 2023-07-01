@@ -9,11 +9,6 @@ function Header() {
           <p className="  font-bold">Hello my name is,</p>
           <p className=" text-3xl font-bold">Nurhamsah</p>
           <p className=" text-xl">I'am Software Engineer and Designer</p>
-          {/* <p className=" text-xl">
-            ReactJS | NextJS | ReactNative | NodeJS | Figma
-          </p> */}
-          {/* Made by
-@kennyotsu */}
           <div className="loaders flex justify-center md:justify-start">
             <div className="words">
               <span className="word text-3xl"></span>
@@ -61,24 +56,6 @@ function Header() {
             <div className="hidden md:block">
               <HeaderIcon size={400} />
             </div>
-            {/* <div
-              className="h-[300px] w-[300px] CIRCLE_ANIMATION top-0 rounded-full absolute
-          "
-            >
-              <div
-                className="h-5 w-5 bg-green-200 rounded-full absolute
-          "
-              ></div>
-            </div>
-            <div
-              className="h-[380px] w-[380px] CIRCLE_ANIMATION_1  rounded-full absolute
-          "
-            >
-              <div
-                className="h-10 w-10 bg-orange-200  rounded-full absolute
-          "
-              ></div>
-            </div> */}
           </div>
           <div className="HEADER_ANIMATION_FLY_GUY absolute  -top-10 -left-10">
             <div className=" w-48 h-48 bg-slate-300 rounded-full"></div>

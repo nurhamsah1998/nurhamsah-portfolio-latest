@@ -1,13 +1,8 @@
-import React from "react";
-
-function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
-  const [time, setTime] = React.useState<any>(1);
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setTime((prev: any) => prev + 1);
-    }, 1000);
-    clearInterval(time);
-  }, []);
+function AboutMe({
+  aboutMeRef,
+}: {
+  aboutMeRef?: React.LegacyRef<HTMLDivElement> | undefined;
+}) {
   return (
     <div ref={aboutMeRef} className=" w-full">
       <div className=" relative">
@@ -15,21 +10,6 @@ function AboutMe({ aboutMeRef }: { aboutMeRef?: any }) {
           <div className="w-[290px] h-[290px] rounded-full ANIMATION_BG blur-xl bg-slate-300 "></div>
         </div>
         <div className=" bg-transparent w-[360px] overflow-hidden h-[360px] relative flex justify-center items-center rounded-full mx-auto">
-          {/* <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND z-[100] rounded-full absolute ">
-            <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full" />
-          </div>
-          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND1 z-[100] rounded-full absolute ">
-            <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full" />
-          </div>
-          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND2 z-[100] rounded-full absolute ">
-            <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full " />
-          </div>
-          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND3 z-[100] rounded-full absolute ">
-            <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full" />
-          </div>
-          <div className=" h-[20px] left-[50%] w-[180px] ANIMATION_ROUND4 z-[100] rounded-full absolute ">
-            <div className="w-[20px] h-[20px] bg-slate-400 float-right rounded-full" />
-          </div> */}
           <div className=" w-[330px] z-[9] h-[330px] bg-white flex justify-center items-center rounded-full">
             <div className="bg-slate-300 z-[9]  w-[310px] h-[310px]  rounded-full flex justify-center items-center">
               <div

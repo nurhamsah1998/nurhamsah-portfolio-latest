@@ -6,7 +6,6 @@ import Project from "Screen/Project";
 import AboutMe from "./Screen/AboutMe";
 import Header from "./Screen/Header";
 import Drawers from "./Screen/Drawers";
-import Skill from "./Screen/Services";
 import Services from "./Screen/Services";
 
 function App() {

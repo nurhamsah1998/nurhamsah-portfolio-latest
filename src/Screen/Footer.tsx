@@ -7,7 +7,12 @@ import {
   IoLogoInstagram,
 } from "react-icons/io5";
 
-export const ContactMe = [
+interface CONTACT_ME {
+  icon: JSX.Element;
+  url: string;
+}
+
+export const ContactMe: CONTACT_ME[] = [
   {
     icon: <IoMail size={25} />,
     url: "mailto:nur.hamsah.cash@gmail.com",
@@ -36,12 +41,6 @@ export const ContactMe = [
 function Footer() {
   return (
     <div className="bg-slate-700 relative mt-10 pt-10">
-      {/* <div className=" justify-center items-center flex h-full">
-        <p className="text-white font-bold italic text-center">
-          " It's better to be tormented by discipline than to be tormented by
-          regret "
-        </p>
-      </div> */}
       <div className="max-w-[1400px] mx-auto">
         <div className="md:flex grid justify-between">
           <div className=" w-[350px] p-5">
@@ -50,7 +49,7 @@ function Footer() {
               Jl. Ngadi Kec. Mojo Kab. Kediri 64162, Jawa Timur, Indonesia
             </p>
             <div className="flex items-center justify-start mt-3 text-white gap-4 mb-5 md:mb-0">
-              {ContactMe.map((x: any, y: number) => (
+              {ContactMe.map((x: CONTACT_ME, y: number) => (
                 <button
                   onClick={() => {
                     window.location.href = x.url;

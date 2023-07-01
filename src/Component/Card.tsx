@@ -1,13 +1,7 @@
-import React from "react";
-import { useNavigate, NavigateFunction } from "react-router-dom";
-
 function Card({
-  hoverText,
-  btnHover,
   coverContent,
   bgcolorHover = "bg-green-500",
   bgcolorCover = "bg-blue-700",
-  tech,
   tag,
   name,
   order,
@@ -15,10 +9,7 @@ function Card({
   tools,
 }: {
   order?: boolean;
-  hoverText?: string;
   tag?: string;
-  btnHover: string;
-  tech?: string;
   coverContent?: JSX.Element;
   bgcolorHover?: string;
   bgcolorCover?: string;
@@ -26,7 +17,6 @@ function Card({
   link?: string | any;
   tools?: any[];
 }) {
-  const navigation: NavigateFunction = useNavigate();
   return (
     <div className=" grid md:flex justify-between">
       <div
@@ -65,18 +55,7 @@ function Card({
           <div className=" w-[50px] h-[50px] HEADER_ANIMATION absolute bg-slate-100 opacity-[0.2] top-[5%] right-[10%] rounded-full"></div>
           <div className=" w-[130px] h-[130px] HEADER_ANIMATION absolute bg-slate-100 opacity-[0.2] bottom-[5%] left-[5%] rounded-full"></div>
           <div className="text-center p-3 z-10 ">
-            {/* <p className=" text-xl font-thin">{hoverText}</p> */}
             <p className=" text-xl font-thin">Hello 👋,</p>
-            {/* <div className="mt-2 font-bold">
-              <p className=" text-md">{tech}</p>
-            </div> */}
-            {/* <button
-              disabled={!Boolean(link)}
-              onClick={() => (window.location.href = link)}
-              className="btn visible md:hidden mt-3"
-            >
-              {btnHover}
-            </button> */}
           </div>
         </div>
         <div

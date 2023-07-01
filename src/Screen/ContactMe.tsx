@@ -1,5 +1,3 @@
-import React from "react";
-
 function ContactMe() {
   return (
     <div className=" text-center max-w-2xl mx-auto">
