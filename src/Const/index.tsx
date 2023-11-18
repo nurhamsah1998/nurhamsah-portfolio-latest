@@ -27,28 +27,33 @@ import C17 from "assets/logoProhect/17.png";
 import C18 from "assets/logoProhect/18.png";
 import C19 from "assets/logoProhect/19.png";
 import C20 from "assets/logoProhect/20.png";
+import C21 from "assets/logoProhect/21.png";
 
-export const LOGOPROJECT: string[] = [
-  C1,
-  C2,
-  C3,
-  C4,
-  C5,
-  C7,
-  C18,
-  C8,
-  C9,
-  C10,
-  C6,
-  C11,
-  C12,
-  C13,
-  C14,
-  C15,
-  C16,
-  C17,
-  C19,
-  C20,
+export const LOGOPROJECT: {
+  logo: string;
+  isOwned: boolean;
+}[] = [
+  { logo: C1, isOwned: true },
+  { logo: C2, isOwned: false },
+  { logo: C3, isOwned: false },
+  { logo: C4, isOwned: false },
+  { logo: C5, isOwned: false },
+  { logo: C7, isOwned: false },
+  { logo: C18, isOwned: false },
+  { logo: C8, isOwned: false },
+  { logo: C9, isOwned: true },
+  { logo: C10, isOwned: false },
+  { logo: C6, isOwned: false },
+  { logo: C11, isOwned: false },
+  { logo: C12, isOwned: false },
+  { logo: C13, isOwned: false },
+  { logo: C14, isOwned: false },
+  { logo: C15, isOwned: false },
+  { logo: C16, isOwned: false },
+  { logo: C17, isOwned: false },
+  { logo: C19, isOwned: false },
+  { logo: C20, isOwned: false },
+  { logo: C21, isOwned: true },
 ];
 
 export interface WEB_APP {

@@ -13,13 +13,14 @@ function LogoProject({
         logo with an interesting philosophy and a good meaning
       </p>
       <div className="flex flex-wrap gap-5 justify-center items-center">
-        {LOGOPROJECT.map((x: string, y: any) => (
+        {LOGOPROJECT.map((x, y: any) => (
           <div key={y} className="">
             <img
               key={y}
               className="w-[130px]  grayscale hover:grayscale-0"
-              src={x}
+              src={x.logo}
             />
+            <p className=" text-center">{x?.isOwned && "( SOLD )"}</p>
           </div>
         ))}
       </div>
