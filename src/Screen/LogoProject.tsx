@@ -20,7 +20,7 @@ function LogoProject({
               className="w-[130px]  grayscale hover:grayscale-0"
               src={x.logo}
             />
-            <p className=" text-center">{x?.isOwned && "( SOLD )"}</p>
+            <p className=" text-center">{x?.isOwned && "( Owned )"}</p>
           </div>
         ))}
       </div>
