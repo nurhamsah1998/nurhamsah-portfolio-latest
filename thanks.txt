@@ -1,0 +1,2 @@
+Why does react-router not works at vercel?
+https://stackoverflow.com/a/65644138/18038473
