@@ -1,5 +1,6 @@
 import BertanyaApp from "assets/ProjectIMG/bertanya.png";
 import MoneyApp from "assets/ProjectIMG/money.png";
+import TodoApp from "assets/ProjectIMG/todo.png";
 import RestaurantApp from "assets/ProjectIMG/restaurant.png";
 import StudentPaymentApp from "assets/ProjectIMG/student_payment_app.png";
 
@@ -7,27 +8,28 @@ import Designer from "assets/SVG/Designer";
 import MobileApplication from "assets/SVG/MobileApplication";
 import WebApplication from "assets/SVG/WebApplication";
 
-import C1 from "assets/logoProhect/1.png";
-import C2 from "assets/logoProhect/2.png";
-import C3 from "assets/logoProhect/3.png";
-import C4 from "assets/logoProhect/4.png";
-import C5 from "assets/logoProhect/5.png";
-import C6 from "assets/logoProhect/6.png";
-import C7 from "assets/logoProhect/7.png";
-import C8 from "assets/logoProhect/8.png";
-import C9 from "assets/logoProhect/9.png";
-import C10 from "assets/logoProhect/10.png";
-import C11 from "assets/logoProhect/11.png";
-import C12 from "assets/logoProhect/12.png";
-import C13 from "assets/logoProhect/13.png";
-import C14 from "assets/logoProhect/14.png";
-import C15 from "assets/logoProhect/15.png";
-import C16 from "assets/logoProhect/16.png";
-import C17 from "assets/logoProhect/17.png";
-import C18 from "assets/logoProhect/18.png";
-import C19 from "assets/logoProhect/19.png";
-import C20 from "assets/logoProhect/20.png";
-import C21 from "assets/logoProhect/21.png";
+import C1 from "assets/logoProject/1.png";
+import C2 from "assets/logoProject/2.png";
+import C3 from "assets/logoProject/3.png";
+import C4 from "assets/logoProject/4.png";
+import C5 from "assets/logoProject/5.png";
+import C6 from "assets/logoProject/6.png";
+import C7 from "assets/logoProject/7.png";
+import C8 from "assets/logoProject/8.png";
+import C9 from "assets/logoProject/9.png";
+import C10 from "assets/logoProject/10.png";
+import C11 from "assets/logoProject/11.png";
+import C12 from "assets/logoProject/12.png";
+import C13 from "assets/logoProject/13.png";
+import C14 from "assets/logoProject/14.png";
+import C15 from "assets/logoProject/15.png";
+import C16 from "assets/logoProject/16.png";
+import C17 from "assets/logoProject/17.png";
+import C18 from "assets/logoProject/18.png";
+import C19 from "assets/logoProject/19.png";
+import C20 from "assets/logoProject/20.png";
+import C21 from "assets/logoProject/21.png";
+import C22 from "assets/logoProject/22.png";
 
 export const LOGOPROJECT: {
   logo: string;
@@ -54,6 +56,7 @@ export const LOGOPROJECT: {
   { logo: C19, isOwned: false },
   { logo: C20, isOwned: false },
   { logo: C21, isOwned: true },
+  { logo: C22, isOwned: false },
 ];
 
 export interface WEB_APP {
@@ -141,5 +144,13 @@ export const webApplication: WEB_APP[] = [
     color: "bg-orange-500",
     img: MoneyApp,
     link: null,
+  },
+  {
+    name: "Simple Todo App",
+    tools: ["React Vite Typescript", "Jotai", "Supabase", "Chakra UI"],
+    tag: "Simple todo list application. You can create todos that you want to work on with other people by inviting them to your project list. You can also set permissions for each person in the project. With the support of a responsive smartphone display, you can build great projects with your friends. Easy and informative Kanban display for your great team",
+    color: "bg-orange-500",
+    img: TodoApp,
+    link: "https://todo-premium.vercel.app",
   },
 ];

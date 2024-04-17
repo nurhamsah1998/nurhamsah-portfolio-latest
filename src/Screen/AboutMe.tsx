@@ -29,13 +29,11 @@ function AboutMe({
         AboutMe
       </p>
       <p className=" text-md text-center mx-auto mt-5  max-w-sm md:max-w-3xl">
-        Hello my friends, introduce my name is Nurhamsah, usually called nur.
-        For some reason, I'm very happy with this increasingly fast
-        technological development, especially in the field of Software
-        Engineering and Graphic Design. therefore I try to create something that
-        can help people to solve problems, especially in the IT technical field.
-        I hope we can work together to make this happen. sorry for too many
-        words, please enjoy my sample project
+        Hello my friends, introduce my name is Nurhamsah, usually called nur, a
+        professional software developer and has quite a lot of experience
+        building projects with a great team. Very proficient in using the React
+        / Next js framework and always prioritizes code performance, security
+        and user experience to achieve amazing results.
       </p>
     </div>
   );

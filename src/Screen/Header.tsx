@@ -30,8 +30,7 @@ function Header() {
             <button
               className="btn btn-outline"
               onClick={() => {
-                window.location.href =
-                  "https://wsrpysvbdbzuydrdczqv.supabase.co/storage/v1/object/public/profile-avatar-img/Nurhamsah%20-%20Resume%20-%20ATS.pdf";
+                window.location.href = "/resume-nurhamsah.pdf";
               }}
             >
               Resume
