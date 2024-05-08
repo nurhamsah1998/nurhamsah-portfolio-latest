@@ -68,7 +68,7 @@ function Footer() {
                 <p className="text-white font-bold">Feedloop</p>
                 <p className="text-white text-sm">as Frontend</p>
                 <p className="text-white text-sm">React JS</p>
-                <p className="text-white text-xs">Mar 2023 - present</p>
+                <p className="text-white text-xs">Mar 2023 - Apr 2024</p>
               </div>
               <div className="mt-3">
                 <p className="text-white font-bold">Freelance / School App</p>
