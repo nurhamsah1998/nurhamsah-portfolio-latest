@@ -63,7 +63,21 @@ function Footer() {
           </div>
           <div className="p-5">
             <p className="text-white text-xl font-extrabold">Experience Work</p>
-            <div className="md:flex grid gap-0 md:gap-[70px]">
+            <div className="grid grid-cols-2">
+              <div className="mt-3">
+                <p className="text-white font-bold">Freelance | AI Monitor</p>
+                <p className="text-white text-sm">as Fullstack</p>
+                <p className="text-white text-sm">Next JS</p>
+                <p className="text-white text-xs">Jul 2023 - present</p>
+              </div>
+              <div className="mt-3">
+                <p className="text-white font-bold">
+                  Freelance | Photo Printing
+                </p>
+                <p className="text-white text-sm">as Frontend</p>
+                <p className="text-white text-sm">React JS</p>
+                <p className="text-white text-xs">May 2024 - Jul 2024</p>
+              </div>
               <div className="mt-3">
                 <p className="text-white font-bold">Feedloop</p>
                 <p className="text-white text-sm">as Frontend</p>
@@ -74,7 +88,7 @@ function Footer() {
                 <p className="text-white font-bold">Freelance / School App</p>
                 <p className="text-white text-sm">as Fullstack</p>
                 <p className="text-white text-sm">React JS | Express | mySQL</p>
-                <p className="text-white text-xs">Nov 2022 - present</p>
+                <p className="text-white text-xs">Nov 2022 - Jul 2024</p>
               </div>
               <div className="mt-3">
                 <p className="text-white font-bold">Code Art Online</p>
@@ -88,7 +102,9 @@ function Footer() {
           </div>
         </div>
         <div className=" text-white p-5 text-center mt-10">
-          <p className="text-xs mb-10">Copyright Nurhamsah 2023</p>
+          <p className="text-xs mb-10">
+            Copyright Nurhamsah {new Date().getFullYear()}
+          </p>
         </div>
       </div>
     </div>

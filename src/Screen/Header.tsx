@@ -15,6 +15,7 @@ function Header() {
               <span className="word text-3xl">React JS</span>
               <span className="word text-3xl">Next JS</span>
               <span className="word text-3xl">React Native</span>
+              <span className="word text-3xl">Nest JS</span>
               <span className="word text-3xl">Designer</span>
             </div>
           </div>
