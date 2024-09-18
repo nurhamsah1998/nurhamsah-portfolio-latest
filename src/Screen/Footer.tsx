@@ -68,7 +68,7 @@ function Footer() {
                 <p className="text-white font-bold">Freelance | AI Monitor</p>
                 <p className="text-white text-sm">as Fullstack</p>
                 <p className="text-white text-sm">Next JS</p>
-                <p className="text-white text-xs">Jul 2023 - present</p>
+                <p className="text-white text-xs">Jul 2024 - present</p>
               </div>
               <div className="mt-3">
                 <p className="text-white font-bold">
@@ -76,7 +76,7 @@ function Footer() {
                 </p>
                 <p className="text-white text-sm">as Frontend</p>
                 <p className="text-white text-sm">React JS</p>
-                <p className="text-white text-xs">May 2024 - Jul 2024</p>
+                <p className="text-white text-xs">May 2024 - Aug 2024</p>
               </div>
               <div className="mt-3">
                 <p className="text-white font-bold">Feedloop</p>
