@@ -14,8 +14,7 @@ function Project({
       </p>
       <p className=" md:mb-20 mb-10 mt-3 mx-auto text-center  max-w-sm md:max-w-3xl">
         Here are some of the best examples of my apps. website apps and mobile
-        apps. These are all my personal projects that I designed myself, from
-        UX/UX app flows to App Logos
+        apps.
       </p>
       <div className="grid gap-10 md:gap-20 justify-center">
         {webApplication.map((item: WEB_APP, index: number) => {
@@ -23,7 +22,18 @@ function Project({
             <div key={index} className=" border-b-2 border-slate-200 pb-10">
               <div className=" flex justify-center">
                 <Card
-                  coverContent={<img src={item.img} />}
+                  coverContent={
+                    item.img ? (
+                      <img src={item.img} />
+                    ) : (
+                      <div className=" h-80 w-screen flex items-center justify-center">
+                        <div className="flex flex-col items-center justify-center">
+                          <span>No Image Yet</span>
+                          <span className=" text-sm">under development</span>
+                        </div>
+                      </div>
+                    )
+                  }
                   order={Boolean(index % 2)}
                   tag={item.tag}
                   name={item.name}
