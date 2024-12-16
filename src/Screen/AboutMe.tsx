@@ -29,12 +29,21 @@ function AboutMe({
         AboutMe
       </p>
       <p className=" text-md text-center mx-auto mt-5  max-w-sm md:max-w-3xl">
-        Hello my friends, introduce my name is Nurhamsah, usually called nur, a
-        professional software developer more than 3 year and has quite a lot of
-        experience building projects. Very proficient in using the React JS,
-        React Native, Next JS, Node JS and Nest JS framework and always
-        prioritizes code performance, security and user experience to achieve
-        amazing results.
+        Hello my friends, introduce my name is Nurhamsah, usually called nur, I
+        am a passionate and experienced software engineer with over 3 years of
+        expertise in developing dynamic web and mobile applications. My core
+        skills include React.js, Next.js, React Native, Node.js, and Nest.js,
+        where I specialize in building efficient, scalable, and user-friendly
+        solutions. In addition to my software engineering skills, I am also a
+        creative logo designer with professional experience in designing logos
+        for various clients, turning ideas into impactful visual identities. My
+        design work has not only been a personal passion but also a source of
+        income, with a proven track record in delivering high-quality logos. I
+        also have experience in 3D modeling using Blender, further enhancing my
+        creative skill set and allowing me to bring ideas to life in unique and
+        innovative ways. I am always excited to take on new challenges,
+        combining my technical and creative abilities to deliver exceptional
+        results.
       </p>
     </div>
   );
