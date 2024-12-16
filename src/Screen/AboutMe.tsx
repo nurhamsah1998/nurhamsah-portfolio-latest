@@ -30,10 +30,11 @@ function AboutMe({
       </p>
       <p className=" text-md text-center mx-auto mt-5  max-w-sm md:max-w-3xl">
         Hello my friends, introduce my name is Nurhamsah, usually called nur, a
-        professional software developer and has quite a lot of experience
-        building projects with a great team. Very proficient in using the React
-        / Next js framework and always prioritizes code performance, security
-        and user experience to achieve amazing results.
+        professional software developer more than 3 year and has quite a lot of
+        experience building projects. Very proficient in using the React JS,
+        React Native, Next JS, Node JS and Nest JS framework and always
+        prioritizes code performance, security and user experience to achieve
+        amazing results.
       </p>
     </div>
   );
